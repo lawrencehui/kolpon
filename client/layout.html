@@ -1,0 +1,10 @@
+<template name="layout">
+
+  {{#if isActiveRoute regex='home'}}
+    {{> login}}
+  {{else}}
+    {{> nav}}
+    {{> yield}}
+  {{/if}}
+
+</template>
